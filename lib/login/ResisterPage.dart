@@ -1,7 +1,8 @@
-import 'package:fantasy_application/LoginPage.dart';
-import 'package:fantasy_application/OtpVerificationPage.dart';
+import 'package:fantasy_application/login/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'OtpVerificationPage.dart';
 
 class ResisterPage extends StatelessWidget {
   TextEditingController mobileNumber = TextEditingController();

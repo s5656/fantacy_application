@@ -1,6 +1,7 @@
-import 'package:fantasy_application/OtpVerificationPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'OtpVerificationPage.dart';
 import 'ResisterPage.dart';
 
 class LoginPage extends StatefulWidget {
@@ -149,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.only(top: 2,bottom: 5,left: 170,right: 5),
                     child: ElevatedButton(
                       onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => ResisterPage()));
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ResisterPage()));
                       },
                       child: const Text('Register/New User'),
                     ),
